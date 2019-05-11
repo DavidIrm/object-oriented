@@ -1,4 +1,4 @@
-package com.sda.encapsulation;
+package com.sda.principles.encapsulation;
 
 public class Person {
     /* toate proprietatile specifice unui obiect,

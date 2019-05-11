@@ -1,6 +1,8 @@
-import com.sda.encapsulation.Person;
-import com.sda.inheritance.Car;
-import com.sda.inheritance.Vehicle;
+package com.sda.principles;
+
+import com.sda.principles.encapsulation.Person;
+import com.sda.principles.inheritanceAndPolymorphism.Car;
+import com.sda.principles.inheritanceAndPolymorphism.Vehicle;
 
 public class Main {
 
@@ -41,6 +43,11 @@ public class Main {
     }
 
     public static void print(Vehicle input) {
+        //cer numele clasei Vehicle
+        System.out.println(Vehicle.class.getSimpleName());
+        //cer clasa a carui instanta e inputul, de pe care iau numele
+        System.out.println(input.getClass().getSimpleName());
+
         System.out.println("Received vehicle with:" +
                 "\nmaxSpeed: " + input.getMaxSpeed() +
                 "\nmanufacturer: " + input.getManufacturer());

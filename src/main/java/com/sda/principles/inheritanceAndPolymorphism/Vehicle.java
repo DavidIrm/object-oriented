@@ -1,4 +1,4 @@
-package com.sda.inheritance;
+package com.sda.principles.inheritanceAndPolymorphism;
 
 public class Vehicle {
 

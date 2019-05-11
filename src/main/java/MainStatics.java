@@ -27,5 +27,32 @@ public class MainStatics {
         cresteNrOrdine();
 
         System.out.println("Nr ord: " + Client.numarOrdine);
+
+        Calculator.add(1,1);
+        Calculator.add(1,1,1);
+        Calculator.add(1.0,1);
+        Calculator.add(1.0,1.0);
+    }
+}
+
+/**
+ * Mecanismul de overload
+ */
+class Calculator {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    static double add(double a, double b) {
+        return a + b;
+    }
+
+    static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    static int add(double a, int b) {
+        return (int) a + b;
     }
 }
